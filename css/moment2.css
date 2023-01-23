@@ -1,0 +1,251 @@
+/* Gällande alla sidor */
+
+* {
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(232, 229, 229);
+}
+
+header {
+    margin: 0;
+    padding: 0%;
+    background-color: rgb(227, 209, 185);
+    border-bottom: 3px solid rgb(197, 195, 195);
+}
+
+nav {
+    padding-bottom: 2%;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    background-color: rgb(231, 227, 227);
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    padding: 3% 0 2% 0;
+    font-size: 42px;
+    text-decoration: none;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+main {
+    background-color: white;
+    width: 90%;
+    margin: 3% auto;
+    padding: 3%;
+    max-width: 1000px;
+    box-shadow: 2px 2px darkgrey;
+    border-left: 2px solid rgb(221, 216, 216);
+    border-top: 1px solid rgb(220, 216, 216);
+}
+
+footer {
+    background-color: rgb(227, 209, 185);
+    text-align: center;
+    margin: 0;
+    padding: 1% 0 1% 0;
+    border-top: 3px solid rgb(194, 193, 193);
+}
+
+
+/* Huvudinnehåll, oberoende av sida */
+
+.content-intro {
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.content {
+    margin-bottom: 10%;
+}
+
+/* Specifikt för olika undersidor */
+
+.question-paragraphs {
+    font-weight: bold;
+}
+
+.index-content {
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+.undersida1-content {
+    width: 57%;
+    padding-bottom: 10%;
+    padding-left: 4%;
+}
+
+.undersida2-content {
+    width: 40%;
+    padding-bottom: 10%;
+    padding-left: 4%;
+}
+
+.grid-container-undersida3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.undersida3-grid-part-1 {
+    grid-column: 1;
+    padding-left: 30%;
+}
+
+.undersida3-grid-part-2 {
+    grid-column: 2;
+}
+
+.undersida3-grid-part-3 {
+    grid-column: 3;
+}
+
+.array li {
+margin: 5% auto auto auto;
+}
+
+.undersida4-content {
+    width: 35%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+}
+
+.calculate-content {
+    width: 50%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+}
+
+.undersida5-content {
+    width: 80%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+}
+
+.undersida5-content ul li {
+    margin: 5% auto auto auto;
+}
+
+/* Media queries */
+
+@media screen AND (max-width:900px) {
+
+    h1 {
+        text-align: left;
+        padding-left: 4%;
+        font-size: 35px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+        padding: 2% 0% 0% 4%;
+    }
+
+    footer {
+        padding: 1% 1% 2% 1%;
+    }
+
+    .index-content {
+        width: 85%;
+        padding-left: 7%;
+    }
+
+    .undersida1-content {
+        width: 70%;
+        padding-bottom:5%;
+        margin-bottom:5%;
+    }
+
+    .undersida2-content {
+        width: 80%;
+    }
+
+    .undersida4-content {
+        width: 80%;
+    }
+
+    .calculate-content {
+        width: 80%;
+    }
+
+}
+
+@media screen AND (max-width:790px) {
+
+    .index-content {
+        padding-bottom: 10%;
+    }
+
+    .undersida1-content{
+        padding-bottom: 20%;
+    }
+    
+    .grid-container-undersida3 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 35%;
+        margin: auto;
+    }
+
+    .undersida3-grid-part-1 {
+        grid-row: 1;
+        grid-column: 1;
+        padding-left: 0;
+        padding-bottom: 20%;
+    }
+
+    .undersida3-grid-part-2 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .undersida3-grid-part-3 {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .array li {
+        margin: 20px auto 20px auto;
+        }
+}
